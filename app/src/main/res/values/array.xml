@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="actions_images">
+        <item >@mipmap/arla</item>
+        <item >@mipmap/borggreve</item>
+        <item >@mipmap/devondale</item>
+        <item >@mipmap/enchatedforest</item>
+        <item >@mipmap/ferrero</item>
+        <item >@mipmap/kindle</item>
+        <item >@mipmap/lindt</item>
+        <item >@mipmap/maltesers</item>
+        <item >@mipmap/mcvitie</item>
+        <item >@mipmap/waitrose</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1E000000">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/arla" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/star"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
+            android:text="TextView"
+            android:textColor="#D5000000" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="17dp"
+            app:srcCompat="@mipmap/empty_star" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/Name"
+            app:srcCompat="@mipmap/back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="13dp"
+            android:background="#1E000000" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/information"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="16dp"
+            android:text="更多产品信息"
+            android:textColor="#D5000000"
+            android:textSize="50px" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#1E000000"
+            android:layout_alignTop="@+id/price"
+            android:layout_toStartOf="@+id/car"
+            android:layout_marginEnd="14dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/information"
+            android:layout_marginTop="12dp"
+            android:background="#1E000000" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textColor="#D5000000" />
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/price"
+            android:layout_below="@+id/price"
+            android:layout_marginTop="11dp"
+            android:text="TextView"
+            android:textColor="#8A000000" />
+
+        <ImageView
+            android:id="@+id/car"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@mipmap/shoplist" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView9" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
